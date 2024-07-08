@@ -6,4 +6,4 @@ Plotting NCAFF football data from https://collegefootballdata.com. I used cfbfas
 
 ![OffPassDown](https://github.com/dlshew/PlottingNCAFFData/assets/49965772/aea01c81-4674-4c63-a73c-9d6b92a7070e)
 
-![DefPassDown](https://github.com/dlshew/PlottingNCAAFData/assets/49965772/28bc5ad4-cd2b-43ff-87f0-1ce2dab90f32)
+![DefPassDown](https://github.com/dlshew/PlottingNCAAFData/assets/49965772/7284a718-f36b-40c7-a4ea-7198bcde8766)
