@@ -44,6 +44,10 @@ Adv23OffPassing = Adv23OffPassing[1:20, :]
 
 Def23General = select(AdvDef23, :Team, :DefPPA => DivByMean, :DefSucess => DivByMean, :DefExplosive => DivByMean, renamecols=false)
 Def23General = Def23General[1:20, :]
+
+Def23Passing = select(AdvDef23, :Team, :DefPassDownPer => DivByMean, :DefPassDownPPA => DivByMean,
+:DefPassDownSuccess => DivByMean, :DefPassDownExpl => DivByMean, renamecols=false)
+Def23General = Def23Passing[1:20, :]
 #Team name vectors for x ticks
 OffTop20Names = Adv23General.Team
 DefTop20Names = Def23General.Team
@@ -126,4 +130,8 @@ Adv23OffStandard.OffStandardDownPPA, Adv23OffStandard.OffStandardSuccess, Adv23O
 VizFour("Off Pass Down Stats from top 20 Points Per Oppurtunity Teams", OffTop20Names, Adv23OffPassing.OffPassDownPer,
 Adv23OffPassing.OffPassDownPPA, Adv23OffPassing.OffPassDownSuccess, Adv23OffPassing.OffPassDownExpl,
 "% of Pass Downs", "Pass Down PPA", "Pass Down Success Rate", "Pass Down Explosiveness", "OffPassDown.png")
+
+VizFour("Def Pass Down Stats from top 20 Points Per Oppurtunity Teams", DefTop20Names, Def23Passing.DefPassDownPer,
+Def23Passing.DefPassDownPPA, Def23Passing.DefPassDownSuccess, Def23Passing.DefPassDownExpl,
+"% of Pass Downs", "Pass Down PPA", "Pass Down Success Rate", "Pass Down Explosiveness", "DefPassDown.png")
 
