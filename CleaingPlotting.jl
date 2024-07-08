@@ -47,7 +47,7 @@ Def23General = Def23General[1:20, :]
 
 Def23Passing = select(AdvDef23, :Team, :DefPassDownPer => DivByMean, :DefPassDownPPA => DivByMean,
 :DefPassDownSuccess => DivByMean, :DefPassDownExpl => DivByMean, renamecols=false)
-Def23General = Def23Passing[1:20, :]
+Def23Passing = Def23Passing[1:20, :]
 #Team name vectors for x ticks
 OffTop20Names = Adv23General.Team
 DefTop20Names = Def23General.Team
